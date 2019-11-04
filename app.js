@@ -194,8 +194,8 @@ console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//
+// 'this' is scoped to the 'joe' object and returns the object itself. It is the parent object.
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+//  'this' is scoped to window itself and it is no longer to the object. It is the global window object.
 // 3. Explain why "this" is different when an arrow function is used.
-//
+// In arrow functions 'this' finds the next upper level object that it is window object.  
