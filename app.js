@@ -14,7 +14,7 @@ console.log('The old way:', theOldWay('Code 301'));
 // We can refactor our first function to use an arrow function.
 // The word "function" is removed and an arrow is added in between the parameter and the opening curly brace
 const theNewWay = course => `I am currently enrolled in ${course}`;
-};
+
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log('The new way:', theNewWay('Code 301'));
@@ -62,7 +62,7 @@ console.log('Add as a one-liner:', addOneLiner(4, 5));
 // STEP 7
 // What if we have multiple lines of code?
 // We need to use a code block
-const multiLiner = (word)=> {
+const multiLiner = word => {
   word = word.toUpperCase();
   return word;
 };
@@ -112,48 +112,42 @@ console.log(
 
 
 
-const sum = (a, b, c, d) => a + b + c + d;
+let sum = (a, b, c, d) => a + b + c + d;
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // console.log(sum(1, 2, 3, 4));
 
 
-const objectLit = function() {
-  return {
+let objectLit = () => ({
     key1: 'value1',
     key2: 'value2',
     key3: 'value3',
-  };
-};
+  });
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(objectLit());
 
 
-const sumAndProduct = (a, b) => {
-  const sum = a + b;
-  const product = a * b;
-  return [sum, product];
-};
+let sumAndProduct = (a, b) => [`${a + b}, ${a * b}`]
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(sumAndProduct(3, 9));
 
 
-const message = name => `Hello, ${name}!`;
-};
+let message = name => `Hello, ${name}!`;
+
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // console.log(message('Allie'));
 
 
-const Student = function(name, age, hometown) {
+let Student = function(name, age, hometown) {
   this.name = name;
   this.age = age;
   this.hometown = hometown;
 };
 
-const joe = new Student('Joe', 'Schmoe', 100);
+let joe = new Student('Joe', 'Schmoe', 100);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this code to break!
